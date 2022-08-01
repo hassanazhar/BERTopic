@@ -24,7 +24,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sentence_transformers import SentenceTransformer
 
-from umap import UMAP
+from umap.umap_ import UMAP
 from hdbscan import HDBSCAN
 from bertopic import BERTopic
 from bertopic._mmr import mmr

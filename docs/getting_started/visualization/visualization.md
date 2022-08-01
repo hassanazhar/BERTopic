@@ -45,7 +45,7 @@ purposes. This process can be quite expensive, so it is advised to adhere to the
 from sklearn.datasets import fetch_20newsgroups
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
-from umap import UMAP
+from umap.umap_ import UMAP
 
 # Prepare embeddings
 docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']
@@ -403,7 +403,7 @@ plotting them on a 2D-plane. To do so, we first need to calculate the hierarchic
 from sklearn.datasets import fetch_20newsgroups
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
-from umap import UMAP
+from umap.umap_ import UMAP
 
 # Prepare embeddings
 docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']

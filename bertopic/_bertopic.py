@@ -20,7 +20,7 @@ from typing import List, Tuple, Union, Mapping, Any, Callable, Iterable
 
 # Models
 import hdbscan
-from umap import UMAP
+from umap.umap_ import UMAP
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
@@ -1390,7 +1390,7 @@ class BERTopic:
         from sklearn.datasets import fetch_20newsgroups
         from sentence_transformers import SentenceTransformer
         from bertopic import BERTopic
-        from umap import UMAP
+        from umap.umap_ import UMAP
 
         # Prepare embeddings
         docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']
@@ -1493,7 +1493,7 @@ class BERTopic:
         from sklearn.datasets import fetch_20newsgroups
         from sentence_transformers import SentenceTransformer
         from bertopic import BERTopic
-        from umap import UMAP
+        from umap.umap_ import UMAP
 
         # Prepare embeddings
         docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']

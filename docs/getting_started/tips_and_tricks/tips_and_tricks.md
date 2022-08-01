@@ -93,7 +93,7 @@ and use that as a starting point. This can speed up the dimensionality reduction
 
 ```python
 import numpy as np
-from umap import UMAP
+from umap.umap_ import UMAP
 from bertopic import BERTopic
 from sklearn.decomposition import PCA
 
@@ -167,7 +167,7 @@ from datasets import load_dataset
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
-from umap import UMAP
+from umap.umap_ import UMAP
 
 # The same embedding model needs to be used for both topic models
 # and since we are dealing with multiple languages, the model needs to be multi-lingual

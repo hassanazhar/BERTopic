@@ -50,7 +50,7 @@ UMAP is an amazing technique for dimensionality reduction. In BERTopic, it is us
 However, it does has a significant number of parameters you could take into account. As exposing all parameters in BERTopic would be difficult to manage, we can instantiate our UMAP model and pass it to BERTopic:
 
 ```python
-from umap import UMAP
+from umap.umap_ import UMAP
 
 umap_model = UMAP(n_neighbors=15, n_components=10, metric='cosine', low_memory=False)
 topic_model = BERTopic(umap_model=umap_model).fit(docs)

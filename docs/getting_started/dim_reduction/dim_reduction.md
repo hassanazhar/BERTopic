@@ -36,7 +36,7 @@ we simply define it and pass it to BERTopic:
 
 ```python
 from bertopic import BERTopic
-from umap import UMAP
+from umap.umap_ import UMAP
 
 umap_model = UMAP(n_neighbors=15, n_components=5, min_dist=0.0, metric='cosine')
 topic_model = BERTopic(umap_model=umap_model)

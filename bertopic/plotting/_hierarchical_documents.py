@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 
-from umap import UMAP
+from umap.umap_ import UMAP
 from typing import List, Union
 
 
@@ -66,7 +66,7 @@ def visualize_hierarchical_documents(topic_model,
     from sklearn.datasets import fetch_20newsgroups
     from sentence_transformers import SentenceTransformer
     from bertopic import BERTopic
-    from umap import UMAP
+    from umap.umap_ import UMAP
 
     # Prepare embeddings
     docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']
